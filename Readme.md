@@ -107,3 +107,11 @@ Log format:
 - Limit orders use `GTC` (Good Till Cancelled) time-in-force by default
 - Testnet environment may have limited liquidity; orders may not fill immediately
 - Real Binance API keys will **not** work — testnet credentials are required
+
+## Bonus Features Implemented
+
+- **Enhanced CLI UX:** Utilized `Typer` for robust command-line parsing and `Rich` to provide high-quality terminal output, including:
+    - Formatted tables for order summaries and API responses.
+    - Colored status messages (Success/Error).
+    - Horizontal rules and styled validation error lists.
+- **Advanced Validation:** Used `Pydantic` for schema validation and custom field/model validators to catch errors (like missing prices for LIMIT orders) before they ever hit the Binance API.
