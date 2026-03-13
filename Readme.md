@@ -28,12 +28,12 @@ cp .env.example .env
 
 ### Market Order (BUY)
 ```bash
-python cli.py place-order BTCUSDT BUY MARKET 0.001
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ```
 
 ### Limit Order (SELL)
 ```bash
-python cli.py place-order BTCUSDT SELL LIMIT 0.001 --price 95000.50
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 95000.50
 ```
 
 ### Help
